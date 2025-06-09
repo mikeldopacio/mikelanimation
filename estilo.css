@@ -19,7 +19,7 @@ body{
 }
 .boton_nav{
     display: inline-block;
-    margin: 30px 5% 10px 5%;
+    margin: 30px 1% 10px 1%;
     color:cornflowerblue;
 }
 .boton_nav_actual{
@@ -41,8 +41,9 @@ body{
 
 
 .imagen_portfolio, .video_portfolio{
-    width: 30%;
+    width: 25%;
     display: inline-block;
+    margin: 20px;
 }
 
 
