@@ -20,7 +20,7 @@ function getCuerpo(id){
                 let extension = ruta.substr(ruta.length - 3);
                 if(extension == "mp4"){
                     //video
-                    r = r + "<video class=video_portfolio><source src='imagenes/2D/"+ruta+"' type='video/mp4'>";
+                    r = r + "<video controls class=video_portfolio><source src='imagenes/2D/"+ruta+"' type='video/mp4'>";
                 }
                 else{
                     //imagen
