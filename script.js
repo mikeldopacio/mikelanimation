@@ -31,17 +31,43 @@ function getCuerpo(id){
         });
     }
     else if(id=="boton_3d"){
-        // $.getJSON('', function(data) {
-        //     alert(data);
-        // });
+                $.getJSON('https://api.github.com/repos/mikeldopacio/mikelanimation/git/trees/8101248296cedcbd25e729a1a086bae376abf8b3', function(data) {
+            r= "";
+            for(let i = 0; i < Object.keys(data["tree"]).length; i++) {
+                let ruta = data["tree"][i]["path"];
+                let extension = ruta.substr(ruta.length - 3);
+                if(extension == "mp4"){
+                    //video
+                    r = r + "<video controls class=video_portfolio><source src='imagenes/2D/"+ruta+"' type='video/mp4'>";
+                }
+                else{
+                    //imagen
+                    r = r + "<img class=imagen_portfolio src='imagenes/2D/"+ruta+"'>";
+                }
+            }
+            document.getElementById("cuerpo").innerHTML = r;
+        });
     }
     else if(id=="boton_reel"){
         document.getElementById("cuerpo").innerHTML = "<iframe class=video_embedido src='https://www.youtube.com/embed/NsCCsxgjxFQ'></iframe>";
     }
     else if(id=="boton_storyboard"){
-        // $.getJSON('', function(data) {
-        //     alert(data);
-        // });
+                $.getJSON('https://api.github.com/repos/mikeldopacio/mikelanimation/git/trees/5967120ca116056da6efc20847bdd5d2ee838e88', function(data) {
+            r= "";
+            for(let i = 0; i < Object.keys(data["tree"]).length; i++) {
+                let ruta = data["tree"][i]["path"];
+                let extension = ruta.substr(ruta.length - 3);
+                if(extension == "mp4"){
+                    //video
+                    r = r + "<video controls class=video_portfolio><source src='imagenes/2D/"+ruta+"' type='video/mp4'>";
+                }
+                else{
+                    //imagen
+                    r = r + "<img class=imagen_portfolio src='imagenes/2D/"+ruta+"'>";
+                }
+            }
+            document.getElementById("cuerpo").innerHTML = r;
+        });
     }
     else{
         document.getElementById("cuerpo").innerHTML = `
