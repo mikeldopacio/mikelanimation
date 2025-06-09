@@ -1,5 +1,10 @@
 //detectar movil
 
+//Lazy loading
+cambiar("boton_2d");
+cambiar("boton_3d");
+cambiar("boton_storyboard");
+cambiar("boton_reel");
 cambiar("boton_info");
 
 function cambiar(id){
