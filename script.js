@@ -3,17 +3,32 @@
 cambiar("boton_info");
 
 function cambiar(id){
-    let cuerpo = document.getElementById("cuerpo");
     document.getElementsByClassName("boton_nav_actual")[0].classList.replace("boton_nav_actual","boton_nav");
     document.getElementById(id).classList.replace("boton_nav","boton_nav_actual");
-    cuerpo.innerHTML = getCuerpo(id);
+    getCuerpo(id);
+    // document.getElementById("cuerpo").innerHTML = getCuerpo(id);
 }
 
 function getCuerpo(id){
     //main tree https://api.github.com/repos/mikeldopacio/mikelanimation/git/trees/6d2d5935d83b695e4982739d02f5fd1010a384cc
     if(id=="boton_2d"){
+        console.log("leer");
         $.getJSON('https://api.github.com/repos/mikeldopacio/mikelanimation/git/trees/8831ec23e1a8d617a8dd3aedcc8c92935c891a9f', function(data) {
-            alert(data);
+            r= "";
+            for(let i = 0; i < Object.keys(data["tree"]).length; i++) {
+                let ruta = data["tree"][i]["path"];
+                let extension = ruta.substr(ruta.length - 3);
+                if(extension == "mp4"){
+                    //video
+                    r = r + "<video class=video_portfolio><source src='/imagenes/2D/"+ruta+"' type='video/mp4'>";
+                }
+                else{
+                    //imagen
+                    r = r + "<img class=imagen_portfolio src='/imagenes/2D/"+ruta+"'>";
+                }
+            }
+            console.log(r);
+            document.getElementById("cuerpo").innerHTML = r;
         });
     }
     else if(id=="boton_3d"){
