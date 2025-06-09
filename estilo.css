@@ -43,7 +43,7 @@ body{
 .imagen_portfolio, .video_portfolio{
     width: 25%;
     display: inline-block;
-    margin: 20px;
+    margin: 5px;
 }
 
 #pie{
