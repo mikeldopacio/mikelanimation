@@ -50,6 +50,9 @@ hr{
     display: inline-block;
     margin: 5px;
 }
+.video_embedido{
+    width:90%;
+}
 
 #pie{
     text-align: center;
