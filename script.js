@@ -63,7 +63,7 @@ function getCuerpo(id){
                 }
                 else{
                     //imagen
-                    r = r + "<img class=imagen_portfolio src='imagenes/2D/"+ruta+"'>";
+                    r = r + "<img class=imagen_portfolio src='imagenes/Storyboard/"+ruta+"'>";
                 }
             }
             document.getElementById("cuerpo").innerHTML = r;
