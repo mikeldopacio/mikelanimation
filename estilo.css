@@ -39,6 +39,13 @@ body{
 
 
 
+.imagen_portfolio, .video_portfolio{
+    width: 30%;
+    display: inline-block;
+}
+
+
+
 
 
 #pie{
