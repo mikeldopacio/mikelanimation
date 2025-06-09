@@ -10,24 +10,21 @@ function cambiar(id){
 }
 
 function getCuerpo(id){
+    //main tree https://api.github.com/repos/mikeldopacio/mikelanimation/git/trees/6d2d5935d83b695e4982739d02f5fd1010a384cc
     if(id=="boton_2d"){
-        var ruta = "imagenes/2D/";
-        var result = null;
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.open("GET", ruta, false);
-        xmlhttp.send();
-        if (xmlhttp.status==200) {
-            result = xmlhttp.responseText;
-        }
-        return result;
+        $.getJSON('https://api.github.com/repos/mikeldopacio/mikelanimation/git/trees/8831ec23e1a8d617a8dd3aedcc8c92935c891a9f', function(data) {
+            alert(data);
+        });
     }
     else if(id=="boton_3d"){
-        var ruta = "imagenes/3D/";
-
+        $.getJSON('', function(data) {
+            alert(data);
+        });
     }
     else if(id=="boton_reel"){
-        var ruta = "imagenes/Reel/";
-
+        $.getJSON('', function(data) {
+            alert(data);
+        });
     }
     else{
         return `
