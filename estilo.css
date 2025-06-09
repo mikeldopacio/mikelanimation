@@ -35,9 +35,14 @@ body{
     color: cyan;
 }
 
-#cuerpo, hr{
-    margin: 0px 15% 0px 15%;
+#cuerpo{
+    margin: 30px 15% 30px 15%;
     text-align: center;
+}
+
+hr{
+    margin: 0px 15% 0px 15%;
+    color:orange;
 }
 
 .imagen_portfolio, .video_portfolio{
