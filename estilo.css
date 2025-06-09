@@ -1,0 +1,45 @@
+body{
+    background: linear-gradient(90deg,rgba(255, 230, 212, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 230, 212, 1) 100%);
+}
+#titulo{
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 30%;
+    height: 10%;
+}
+
+#barra_navegacion{
+    margin: auto;
+    width:50%;
+    height: 100px;
+    text-align: center;
+}
+.boton_nav{
+    display: inline-block;
+    margin: 30px 5% 10px 5%;
+    color:cornflowerblue;
+}
+.boton_nav_actual{
+    display: inline-block;
+    margin: 30px 5% 10px 5%;
+    color:darkblue;
+    cursor:default;
+}
+.boton_nav:hover{
+    cursor: pointer;
+    color: cyan;
+}
+
+#cuerpo{
+    margin: 0px 15% 0px 15%;
+}
+
+
+
+
+
+#pie{
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+}
