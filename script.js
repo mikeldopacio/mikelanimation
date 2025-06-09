@@ -36,6 +36,9 @@ function getCuerpo(id){
         // });
     }
     else if(id=="boton_reel"){
+        document.getElementById("cuerpo").innerHTML = "<iframe class=video_embedido src='https://www.youtube.com/embed/NsCCsxgjxFQ'></iframe>";
+    }
+    else if(id=="boton_storyboard"){
         // $.getJSON('', function(data) {
         //     alert(data);
         // });

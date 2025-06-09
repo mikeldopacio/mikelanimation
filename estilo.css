@@ -15,6 +15,7 @@ body{
     width:50%;
     height: 100px;
     text-align: center;
+    user-select: none;
 }
 .boton_nav{
     display: inline-block;
