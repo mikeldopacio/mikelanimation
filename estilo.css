@@ -52,6 +52,7 @@ hr{
 }
 .video_embedido{
     width:90%;
+    aspect-ratio: 16/9;
 }
 
 #pie{
