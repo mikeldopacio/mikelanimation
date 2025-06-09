@@ -15,6 +15,8 @@ function cambiar(id){
     // document.getElementById("cuerpo").innerHTML = getCuerpo(id);
 }
 
+//Hay que recuperar el path de cada tree de forma dinámica o si no no se van a actualizar los contenidos subidos sino que va a usar lo sde cada comit anterior.
+
 function getCuerpo(id){
     //main tree https://api.github.com/repos/mikeldopacio/mikelanimation/git/trees/6d2d5935d83b695e4982739d02f5fd1010a384cc
     if(id=="boton_2d"){
