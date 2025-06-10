@@ -102,7 +102,7 @@ function cargarArboles(path){
                 console.log("Acceso al directorio 2D. Primer elemento:");
                 console.log(tree["tree"][0]["path"]);
                 console.log(tree["tree"][0]["url"]);
-                tree_2d = tree.stringify();  
+                tree_2d = JSON.stringify(tree);  
                 console.log("tree_2d al final de cargarArboles() "+tree_2d);
             });
             //directorio 3D
@@ -110,7 +110,7 @@ function cargarArboles(path){
                 console.log("Acceso al directorio 3D. Primer elemento:");
                 console.log(tree["tree"][0]["path"]);
                 console.log(tree["tree"][0]["url"]);
-                tree_3d = tree.stringify();
+                tree_3d = JSON.stringify(tree);
                 console.log("tree_3d al final de cargarArboles() "+tree_3d);  
             });
             //directorio storyboard 
@@ -118,7 +118,7 @@ function cargarArboles(path){
                 console.log("Acceso al directorio storyboard. Primer elemento:");
                 console.log(tree["tree"][0]["path"]);
                 console.log(tree["tree"][0]["url"]);
-                tree_storyboard = tree.stringify();
+                tree_storyboard = JSON.stringify(tree);
                 console.log("tree_storyboard al final de cargarArboles() "+tree_storyboard);  
             });         
         });
