@@ -114,7 +114,7 @@ function cargarArboles(path){
                 console.log("tree_3d al final de cargarArboles() "+tree_3d);  
             });
             //directorio storyboard 
-            $.getJSON(data2["tree"][3]["url"], function(tree) {
+            $.getJSON(data2["tree"][4]["url"], function(tree) {
                 console.log("Acceso al directorio storyboard. Primer elemento:");
                 console.log(tree["tree"][0]["path"]);
                 console.log(tree["tree"][0]["url"]);
