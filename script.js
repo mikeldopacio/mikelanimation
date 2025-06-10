@@ -21,6 +21,7 @@ function cambiar(id){
 
 function getCuerpo(id){
     if(id=="boton_2d"){
+        console.log("tree_2d al inicio de getCuerpo() "+tree_2d);
         data = JSON.parse(tree_2d);
         r= "";
         for(let i = 0; i < Object.keys(data["tree"]).length; i++) {
@@ -38,6 +39,7 @@ function getCuerpo(id){
         document.getElementById("cuerpo").innerHTML = r;
     }
     else if(id=="boton_3d"){
+        console.log("tree_3d al inicio de getCuerpo() "+tree_3d);
         data = JSON.parse(tree_3d);    
         r= "";
         for(let i = 0; i < Object.keys(data["tree"]).length; i++) {
@@ -58,6 +60,7 @@ function getCuerpo(id){
         document.getElementById("cuerpo").innerHTML = "<iframe class=video_embedido src='https://www.youtube.com/embed/NsCCsxgjxFQ'></iframe>";
     }
     else if(id=="boton_storyboard"){
+        console.log("tree_storyboard al inicio de getCuerpo() "+tree_storyboard);
         data = JSON.parse(tree_storyboard);
         r= "";
         for(let i = 0; i < Object.keys(data["tree"]).length; i++) {
@@ -100,20 +103,23 @@ function cargarArboles(path){
                 console.log(tree["tree"][0]["path"]);
                 console.log(tree["tree"][0]["url"]);
                 tree_2d = tree.stringify();  
+                console.log("tree_2d al final de cargarArboles() "+tree_2d);
             });
             //directorio 3D
             $.getJSON(data2["tree"][2]["url"], function(tree) {
                 console.log("Acceso al directorio 3D. Primer elemento:");
                 console.log(tree["tree"][0]["path"]);
                 console.log(tree["tree"][0]["url"]);
-                tree_3d = tree.stringify();  
+                tree_3d = tree.stringify();
+                console.log("tree_3d al final de cargarArboles() "+tree_3d);  
             });
             //directorio storyboard 
             $.getJSON(data2["tree"][3]["url"], function(tree) {
                 console.log("Acceso al directorio storyboard. Primer elemento:");
                 console.log(tree["tree"][0]["path"]);
                 console.log(tree["tree"][0]["url"]);
-                tree_storyboard = tree.stringify();  
+                tree_storyboard = tree.stringify();
+                console.log("tree_storyboard al final de cargarArboles() "+tree_storyboard);  
             });         
         });
     });
