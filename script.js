@@ -10,6 +10,8 @@ let tree_storyboard = "";
 // jsons en strings
 
 // cargarArboles(main_path);
+//<img class=imagen_portfolio src='imagenes/2D/'>
+//<video controls class=video_portfolio><source src='imagenes/2D/' type='video/mp4'>
 
 function cambiar(id){
     document.getElementById("cuerpo").innerHTML = "";
@@ -22,9 +24,9 @@ function cambiar(id){
 function getCuerpo(id){
     if(id=="boton_2d"){
         document.getElementById("cuerpo").innerHTML = `
-        <img class=imagen_portfolio src='imagenes/2D/Girl_GetPossesed.gif'>
-        <img class=imagen_portfolio src='imagenes/2D/Girl_HelpCorner.gif'>
-        <img class=imagen_portfolio src='imagenes/2D/Girl_Open_Lotus_In.gif'>
+        <img class=imagen_portfolio src='imagenes/2D/Girl_GetPossesed-ezgif.com-crop.gif'>
+        <img class=imagen_portfolio src='imagenes/2D/Girl_HelpCorner-ezgif.com-crop.gif'>
+        <img class=imagen_portfolio src='imagenes/2D/Girl_Open_Lotus_In-ezgif.com-crop.gif'>
         <video controls class=video_portfolio><source src='imagenes/2D/ezgif-7415bef9d97da4.mp4' type='video/mp4'>
         <video controls class=video_portfolio><source src='imagenes/2D/ezgif-77a77700fa5b8d.mp4' type='video/mp4'>
         <video controls class=video_portfolio><source src='imagenes/2D/ezgif-79332dbd95e4b7.mp4' type='video/mp4'>
