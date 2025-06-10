@@ -9,7 +9,9 @@ let tree_3d = "";
 let tree_storyboard = "";
 // jsons en strings
 
-cargarArboles(main_path);
+// cargarArboles(main_path);
+//<img class=imagen_portfolio src='imagenes/2D/'>
+//<video controls class=video_portfolio><source src='imagenes/2D/' type='video/mp4'>
 
 function cambiar(id){
     document.getElementById("cuerpo").innerHTML = "";
@@ -21,61 +23,73 @@ function cambiar(id){
 
 function getCuerpo(id){
     if(id=="boton_2d"){
+        document.getElementById("cuerpo").innerHTML = `
+        <img class=imagen_portfolio src='imagenes/2D/Girl_GetPossesed-ezgif.com-crop.gif'>
+        <img class=imagen_portfolio src='imagenes/2D/Girl_HelpCorner-ezgif.com-crop.gif'>
+        <img class=imagen_portfolio src='imagenes/2D/Girl_Open_Lotus_In-ezgif.com-crop.gif'>
+        <video controls class=video_portfolio><source src='imagenes/2D/ezgif-7415bef9d97da4.mp4' type='video/mp4'>
+        <video controls class=video_portfolio><source src='imagenes/2D/ezgif-77a77700fa5b8d.mp4' type='video/mp4'>
+        <video controls class=video_portfolio><source src='imagenes/2D/ezgif-79332dbd95e4b7.mp4' type='video/mp4'>
+        `;
         // console.log("tree_2d al inicio de getCuerpo() "+tree_2d);
-        data = JSON.parse(tree_2d);
-        r= "";
-        for(let i = 0; i < Object.keys(data["tree"]).length; i++) {
-            let ruta = data["tree"][i]["path"];
-            let extension = ruta.substr(ruta.length - 3);
-            if(extension == "mp4"){
-                //video
-                r = r + "<video controls class=video_portfolio><source src='imagenes/2D/"+ruta+"' type='video/mp4'>";
-            }
-            else{
-                //imagen
-                r = r + "<img class=imagen_portfolio src='imagenes/2D/"+ruta+"'>";
-            }
-        }
-        document.getElementById("cuerpo").innerHTML = r;
+        // data = JSON.parse(tree_2d);
+        // r= "";
+        // for(let i = 0; i < Object.keys(data["tree"]).length; i++) {
+        //     let ruta = data["tree"][i]["path"];
+        //     let extension = ruta.substr(ruta.length - 3);
+        //     if(extension == "mp4"){
+        //         //video
+        //         r = r + "<video controls class=video_portfolio><source src='imagenes/2D/"+ruta+"' type='video/mp4'>";
+        //     }
+        //     else{
+        //         //imagen
+        //         r = r + "<img class=imagen_portfolio src='imagenes/2D/"+ruta+"'>";
+        //     }
+        // }
+        // document.getElementById("cuerpo").innerHTML = r;
     }
     else if(id=="boton_3d"){
+        document.getElementById("cuerpo").innerHTML = `
+
+        `;
         // console.log("tree_3d al inicio de getCuerpo() "+tree_3d);
-        data = JSON.parse(tree_3d);    
-        r= "";
-        for(let i = 0; i < Object.keys(data["tree"]).length; i++) {
-            let ruta = data["tree"][i]["path"];
-            let extension = ruta.substr(ruta.length - 3);
-            if(extension == "mp4"){
-                //video
-                r = r + "<video controls class=video_portfolio><source src='imagenes/3D/"+ruta+"' type='video/mp4'>";
-            }
-            else{
-                //imagen
-                r = r + "<img class=imagen_portfolio src='imagenes/3D/"+ruta+"'>";
-            }
-        }
-        document.getElementById("cuerpo").innerHTML = r;
+        // data = JSON.parse(tree_3d);    
+        // r= "";
+        // for(let i = 0; i < Object.keys(data["tree"]).length; i++) {
+        //     let ruta = data["tree"][i]["path"];
+        //     let extension = ruta.substr(ruta.length - 3);
+        //     if(extension == "mp4"){
+        //         //video
+        //         r = r + "<video controls class=video_portfolio><source src='imagenes/3D/"+ruta+"' type='video/mp4'>";
+        //     }
+        //     else{
+        //         //imagen
+        //         r = r + "<img class=imagen_portfolio src='imagenes/3D/"+ruta+"'>";
+        //     }
+        // }
+        // document.getElementById("cuerpo").innerHTML = r;
     }
     else if(id=="boton_reel"){
         document.getElementById("cuerpo").innerHTML = "<iframe class=video_embedido src='https://www.youtube.com/embed/NsCCsxgjxFQ'></iframe>";
     }
     else if(id=="boton_storyboard"){
         // console.log("tree_storyboard al inicio de getCuerpo() "+tree_storyboard);
-        data = JSON.parse(tree_storyboard);
-        r= "";
-        for(let i = 0; i < Object.keys(data["tree"]).length; i++) {
-            let ruta = data["tree"][i]["path"];
-            let extension = ruta.substr(ruta.length - 3);
-            if(extension == "mp4"){
-                //video
-                r = r + "<video controls class=video_portfolio><source src='imagenes/Storyboard/"+ruta+"' type='video/mp4'>";
-            }
-            else{
-                //imagen
-                r = r + "<img class=imagen_portfolio src='imagenes/Storyboard/"+ruta+"'>";
-            }
-        }
-        document.getElementById("cuerpo").innerHTML = r;
+        // data = JSON.parse(tree_storyboard);
+        // r= "";
+        // for(let i = 0; i < Object.keys(data["tree"]).length; i++) {
+        //     let ruta = data["tree"][i]["path"];
+        //     let extension = ruta.substr(ruta.length - 3);
+        //     if(extension == "mp4"){
+        //         //video
+        //         r = r + "<video controls class=video_portfolio><source src='imagenes/Storyboard/"+ruta+"' type='video/mp4'>";
+        //     }
+        //     else{
+        //         //imagen
+        //         r = r + "<img class=imagen_portfolio src='imagenes/Storyboard/"+ruta+"'>";
+        //     }
+        // }
+        // document.getElementById("cuerpo").innerHTML = r;
+        document.getElementById("cuerpo").innerHTML = ;
     }
     else{
         document.getElementById("cuerpo").innerHTML = `
