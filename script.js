@@ -106,14 +106,14 @@ function cargarArboles(path){
                 console.log("Acceso al directorio 3D. Primer elemento:");
                 console.log(tree["tree"][0]["path"]);
                 console.log(tree["tree"][0]["url"]);
-                tree_2d = tree.stringify();  
+                tree_3d = tree.stringify();  
             });
             //directorio storyboard 
             $.getJSON(data2["tree"][3]["url"], function(tree) {
                 console.log("Acceso al directorio storyboard. Primer elemento:");
                 console.log(tree["tree"][0]["path"]);
                 console.log(tree["tree"][0]["url"]);
-                tree_2d = tree.stringify();  
+                tree_storyboard = tree.stringify();  
             });         
         });
     });
