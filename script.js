@@ -7,6 +7,9 @@ cambiar("boton_storyboard");
 cambiar("boton_reel");
 cambiar("boton_info");
 
+let main_path = "https://api.github.com/repos/mikeldopacio/mikelanimation/git/trees/main";
+let current_path = "";
+
 function cambiar(id){
     document.getElementById("cuerpo").innerHTML = "";
     document.getElementsByClassName("boton_nav_actual")[0].classList.replace("boton_nav_actual","boton_nav");
@@ -18,7 +21,15 @@ function cambiar(id){
 //Hay que recuperar el path de cada tree de forma dinámica o si no no se van a actualizar los contenidos subidos sino que va a usar lo sde cada comit anterior.
 
 function getCuerpo(id){
-    //main tree https://api.github.com/repos/mikeldopacio/mikelanimation/git/trees/6d2d5935d83b695e4982739d02f5fd1010a384cc
+            $.getJSON(main_path, function(data) {
+                console.log(data["tree"][1]["path"]);
+                console.log(data["tree"][1]["url"]);
+                current_path = data["tree"][1]["url"];
+                $.getJSON(current_path, function(data) {
+                    console.log(data["tree"][1]["path"]);
+                    console.log(data["tree"][1]["url"]);
+                });
+            });
     if(id=="boton_2d"){
         $.getJSON('https://api.github.com/repos/mikeldopacio/mikelanimation/git/trees/8831ec23e1a8d617a8dd3aedcc8c92935c891a9f', function(data) {
             r= "";
