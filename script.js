@@ -31,7 +31,7 @@ function getCuerpo(id){
                 });
             });
     if(id=="boton_2d"){
-        $.getJSON('https://api.github.com/repos/mikeldopacio/mikelanimation/git/trees/8831ec23e1a8d617a8dd3aedcc8c92935c891a9f', function(data) {
+        $.getJSON("https://api.github.com/repos/mikeldopacio/mikelanimation/git/trees/main", function(data) {
             r= "";
             for(let i = 0; i < Object.keys(data["tree"]).length; i++) {
                 let ruta = data["tree"][i]["path"];
