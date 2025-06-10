@@ -21,17 +21,17 @@ function cambiar(id){
 //Hay que recuperar el path de cada tree de forma dinámica o si no no se van a actualizar los contenidos subidos sino que va a usar lo sde cada comit anterior.
 
 function getCuerpo(id){
-            $.getJSON(main_path, function(data) {
+            $.getJSON("https://api.github.com/repos/mikeldopacio/mikelanimation/git/trees/main", function(data) {
                 console.log(data["tree"][1]["path"]);
                 console.log(data["tree"][1]["url"]);
-                current_path = data["tree"][1]["url"];
-                $.getJSON(current_path, function(data) {
-                    console.log(data["tree"][1]["path"]);
-                    console.log(data["tree"][1]["url"]);
+                // current_path = data["tree"][1]["url"];
+                $.getJSON(data["tree"][1]["url"], function(data2) {
+                    console.log(data2["tree"][1]["path"]);
+                    console.log(data2["tree"][1]["url"]);
                 });
             });
     if(id=="boton_2d"){
-        $.getJSON("https://api.github.com/repos/mikeldopacio/mikelanimation/git/trees/main", function(data) {
+        $.getJSON('https://api.github.com/repos/mikeldopacio/mikelanimation/git/trees/8831ec23e1a8d617a8dd3aedcc8c92935c891a9f', function(data) {
             r= "";
             for(let i = 0; i < Object.keys(data["tree"]).length; i++) {
                 let ruta = data["tree"][i]["path"];
