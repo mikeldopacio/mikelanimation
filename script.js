@@ -89,7 +89,7 @@ function getCuerpo(id){
         //     }
         // }
         // document.getElementById("cuerpo").innerHTML = r;
-        document.getElementById("cuerpo").innerHTML = ;
+        // document.getElementById("cuerpo").innerHTML = "";
     }
     else{
         document.getElementById("cuerpo").innerHTML = `
