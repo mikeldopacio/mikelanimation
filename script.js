@@ -74,7 +74,7 @@ function getCuerpo(id){
         // document.getElementById("cuerpo").innerHTML = r;
     }
     else if(id=="boton_reel"){
-        document.getElementById("cuerpo").innerHTML = "<iframe class=video_embedido src='https://www.youtube.com/embed/NsCCsxgjxFQ'></iframe>";
+        document.getElementById("cuerpo").innerHTML = "<iframe class=video_embedido src='https://www.youtube.com/embed/-ubOl-xcHQc'></iframe>";
     }
     else if(id=="boton_storyboard"){
         document.getElementById("cuerpo").innerHTML = `
