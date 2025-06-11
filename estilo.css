@@ -40,6 +40,14 @@ body{
     margin: 0px 15% 30px 15%;
     text-align: center;
 }
+.texto_cuerpo{
+    text-align: justify;
+    font-size: 16px;
+}
+.titulo{
+    font-size: 24px;
+    font-weight: bolder;
+}
 
 hr{
     margin: 0px 15% 0px 15%;
