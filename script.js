@@ -3,8 +3,8 @@
 //inicializar
 cambiar("boton_info");
 
-if(window.matchMedia("(any-hover:none)").matches) {
-    alert("Esta página no está hecha para verse en teléfonos móviles, por favor, activa la opción 'Solicitar versión de escritorio' de tu navegador.");
+if(screen.width<400) {
+    alert("This site doesnt't curently have a phone version, please, toggle the 'Desktop site' setting on your browser.");
     //from: https://xobyte.org/scripts/isMobile.js
 }
 
@@ -107,7 +107,7 @@ function getCuerpo(id){
             I've worked at Nomada Studio during 6 months, doing clean up of videogame 2D animations. I've also been doing art comissions for 6 years.
             I strive to keep growing in my animation journey, thank you for your time.</p>
             </div>
-            <p class=texto_cuerpo style=size:20px;font-weight:bolder; >Contact<br></p>
+            <p class=texto_cuerpo style=font-size:24px;font-weight:bolder; >Contact<br></p>
             <center><p class=texto_cuerpo>+34 618 29 19 12<br></p></center>
             <center><p class=texto_cuerpo>mikelanimation@gmail.com<br></p></center><br><br><br>
         `;
