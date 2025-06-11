@@ -107,7 +107,7 @@ function getCuerpo(id){
             I've worked at Nomada Studio during 6 months, doing clean up of videogame 2D animations. I've also been doing art comissions for 6 years.
             I strive to keep growing in my animation journey, thank you for your time.</p>
             </div>
-            <p class=titulo style=display:table >Contact<br></p>
+            <p class=texto_cuerpo style=size:20px;font-weight:bolder; >Contact<br></p>
             <center><p class=texto_cuerpo>+34 618 29 19 12<br></p></center>
             <center><p class=texto_cuerpo>mikelanimation@gmail.com<br></p></center><br><br><br>
         `;
