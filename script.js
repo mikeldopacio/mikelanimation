@@ -47,7 +47,7 @@ function getCuerpo(id){
     }
     else if(id=="boton_3d"){
         document.getElementById("cuerpo").innerHTML = `
-        <video controls class=video_portfolio><source src='imagenes/3D/KRS_POST_EDIT_v22_1_-_Trim_-_Trim.mp4' type='video/mp4'></video>
+        <video controls muted class=video_portfolio><source src='imagenes/3D/KRS_POST_EDIT_v22_1_-_Trim_-_Trim.mp4' type='video/mp4'></video>
         <video controls class=video_portfolio><source src='imagenes/3D/krs_sc060_sh010_v02.mp4'></video>
         <video controls class=video_portfolio><source src='imagenes/3D/krs_sc060_sh040_v06.mp4' type='video/mp4'></video>
         `;
