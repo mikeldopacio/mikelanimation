@@ -54,6 +54,7 @@ hr{
     width: 48%;
     display: inline-block;
     margin: 5px;
+    aspect-ratio: 16/9;
 }
 .video_embedido{
     width:90%;
