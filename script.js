@@ -51,8 +51,8 @@ function getCuerpo(id){
         <video controls muted class=video_portfolio><source src='imagenes/3D/KRS_POST_EDIT_v22_1_-_Trim_-_Trim.mp4' type='video/mp4'></video>
         <video controls class=video_portfolio><source src='imagenes/3D/krs_sc060_sh010_v02.mp4'></video>
         <video controls class=video_portfolio><source src='imagenes/3D/krs_sc060_sh040_v06.mp4' type='video/mp4'></video>
-        <p class=texto_cuerpo>A part of animating I also enjoy doing layout, so I put an example along some 3D animations, I only
-did the animations (and layout) of the previous shots. All done in Maya.</p>
+        <p class=texto_cuerpo>Besides animating, I also enjoy doing layout, so I have put an example along some 3D animations, I only
+did the animations (and layout) of these previous shots. All done in Maya.</p>
         `;
         // console.log("tree_3d al inicio de getCuerpo() "+tree_3d);
         // data = JSON.parse(tree_3d);    
