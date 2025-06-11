@@ -49,9 +49,8 @@ function getCuerpo(id){
         // document.getElementById("cuerpo").innerHTML = r;
     }
     else if(id=="boton_3d"){
-        document.getElementById("cuerpo").innerHTML = `
-
-        `;
+        // document.getElementById("cuerpo").innerHTML = `
+        // `;
         // console.log("tree_3d al inicio de getCuerpo() "+tree_3d);
         // data = JSON.parse(tree_3d);    
         // r= "";
@@ -89,7 +88,7 @@ function getCuerpo(id){
         //     }
         // }
         // document.getElementById("cuerpo").innerHTML = r;
-        // document.getElementById("cuerpo").innerHTML = "";
+        document.getElementById("cuerpo").innerHTML = "";
     }
     else{
         document.getElementById("cuerpo").innerHTML = `
