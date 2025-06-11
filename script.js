@@ -73,9 +73,9 @@ function getCuerpo(id){
     }
     else if(id=="boton_storyboard"){
         document.getElementById("cuerpo").innerHTML = `
-            <video controls class=video_portfolio><source src='imagenes/Storyboard/sbreel_-_Trim.mp4'></video>
-            <video controls class=video_portfolio><source src='imagenes/Storyboard/sbreel_-_Trim2.mp4'></video>
-            <video controls class=video_portfolio><source src='imagenes/Storyboard/sbreel_-_Trim3.mp4'></video>
+            <video controls muted class=video_portfolio><source src='imagenes/Storyboard/sbreel_-_Trim.mp4'></video>
+            <video controls muted class=video_portfolio><source src='imagenes/Storyboard/sbreel_-_Trim2.mp4'></video>
+            <video controls muted class=video_portfolio><source src='imagenes/Storyboard/sbreel_-_Trim3.mp4'></video>
         `;
         // console.log("tree_storyboard al inicio de getCuerpo() "+tree_storyboard);
         // data = JSON.parse(tree_storyboard);
