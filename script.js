@@ -27,9 +27,6 @@ function getCuerpo(id){
         <img class=imagen_portfolio src='imagenes/2D/Girl_GetPossesed-ezgif.com-crop.gif'>
         <img class=imagen_portfolio src='imagenes/2D/Girl_HelpCorner-ezgif.com-crop.gif'>
         <img class=imagen_portfolio src='imagenes/2D/Girl_Open_Lotus_In-ezgif.com-crop.gif'>
-        <video controls class=video_portfolio><source src='imagenes/2D/ezgif-7415bef9d97da4.mp4' type='video/mp4'>
-        <video controls class=video_portfolio><source src='imagenes/2D/ezgif-77a77700fa5b8d.mp4' type='video/mp4'>
-        <video controls class=video_portfolio><source src='imagenes/2D/ezgif-79332dbd95e4b7.mp4' type='video/mp4'>
         `;
         // console.log("tree_2d al inicio de getCuerpo() "+tree_2d);
         // data = JSON.parse(tree_2d);
@@ -50,12 +47,9 @@ function getCuerpo(id){
     }
     else if(id=="boton_3d"){
         document.getElementById("cuerpo").innerHTML = `
-        <img class=imagen_portfolio src='imagenes/2D/Girl_GetPossesed-ezgif.com-crop.gif'>
-        <img class=imagen_portfolio src='imagenes/2D/Girl_HelpCorner-ezgif.com-crop.gif'>
-        <img class=imagen_portfolio src='imagenes/2D/Girl_Open_Lotus_In-ezgif.com-crop.gif'>
-        <video controls class=video_portfolio><source src='imagenes/2D/ezgif-7415bef9d97da4.mp4' type='video/mp4'>
-        <video controls class=video_portfolio><source src='imagenes/2D/ezgif-77a77700fa5b8d.mp4' type='video/mp4'>
-        <video controls class=video_portfolio><source src='imagenes/2D/ezgif-79332dbd95e4b7.mp4' type='video/mp4'>
+        <video controls class=video_portfolio><source src='imagenes/3D/KRS_POST_EDIT_v22_1_-_Trim_-_Trim.mp4' type='video/mp4'></video>
+        <video controls class=video_portfolio><source src='imagenes/3D/krs_sc060_sh010_v02.mp4'></video>
+        <video controls class=video_portfolio><source src='imagenes/3D/krs_sc060_sh040_v06.mp4' type='video/mp4'></video>
         `;
         // console.log("tree_3d al inicio de getCuerpo() "+tree_3d);
         // data = JSON.parse(tree_3d);    
@@ -79,12 +73,9 @@ function getCuerpo(id){
     }
     else if(id=="boton_storyboard"){
         document.getElementById("cuerpo").innerHTML = `
-        <img class=imagen_portfolio src='imagenes/2D/Girl_GetPossesed-ezgif.com-crop.gif'>
-        <img class=imagen_portfolio src='imagenes/2D/Girl_HelpCorner-ezgif.com-crop.gif'>
-        <img class=imagen_portfolio src='imagenes/2D/Girl_Open_Lotus_In-ezgif.com-crop.gif'>
-        <video controls class=video_portfolio><source src='imagenes/2D/ezgif-7415bef9d97da4.mp4' type='video/mp4'>
-        <video controls class=video_portfolio><source src='imagenes/2D/ezgif-77a77700fa5b8d.mp4' type='video/mp4'>
-        <video controls class=video_portfolio><source src='imagenes/2D/ezgif-79332dbd95e4b7.mp4' type='video/mp4'>
+            <video controls class=video_portfolio><source src='imagenes/Storyboard/sbreel_-_Trim.mp4'></video>
+            <video controls class=video_portfolio><source src='imagenes/Storyboard/sbreel_-_Trim2.mp4'></video>
+            <video controls class=video_portfolio><source src='imagenes/Storyboard/sbreel_-_Trim3.mp4'></video>
         `;
         // console.log("tree_storyboard al inicio de getCuerpo() "+tree_storyboard);
         // data = JSON.parse(tree_storyboard);
