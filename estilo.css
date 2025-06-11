@@ -45,8 +45,13 @@ hr{
     color:orange;
 }
 
-.imagen_portfolio, .video_portfolio{
+.imagen_portfolio{
     width: 25%;
+    display: inline-block;
+    margin: 5px;
+}
+.video_portfolio{
+    width: 48%;
     display: inline-block;
     margin: 5px;
 }
