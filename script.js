@@ -50,7 +50,12 @@ function getCuerpo(id){
     }
     else if(id=="boton_3d"){
         document.getElementById("cuerpo").innerHTML = `
-
+        <img class=imagen_portfolio src='imagenes/2D/Girl_GetPossesed-ezgif.com-crop.gif'>
+        <img class=imagen_portfolio src='imagenes/2D/Girl_HelpCorner-ezgif.com-crop.gif'>
+        <img class=imagen_portfolio src='imagenes/2D/Girl_Open_Lotus_In-ezgif.com-crop.gif'>
+        <video controls class=video_portfolio><source src='imagenes/2D/ezgif-7415bef9d97da4.mp4' type='video/mp4'>
+        <video controls class=video_portfolio><source src='imagenes/2D/ezgif-77a77700fa5b8d.mp4' type='video/mp4'>
+        <video controls class=video_portfolio><source src='imagenes/2D/ezgif-79332dbd95e4b7.mp4' type='video/mp4'>
         `;
         // console.log("tree_3d al inicio de getCuerpo() "+tree_3d);
         // data = JSON.parse(tree_3d);    
@@ -73,6 +78,14 @@ function getCuerpo(id){
         document.getElementById("cuerpo").innerHTML = "<iframe class=video_embedido src='https://www.youtube.com/embed/NsCCsxgjxFQ'></iframe>";
     }
     else if(id=="boton_storyboard"){
+        document.getElementById("cuerpo").innerHTML = `
+        <img class=imagen_portfolio src='imagenes/2D/Girl_GetPossesed-ezgif.com-crop.gif'>
+        <img class=imagen_portfolio src='imagenes/2D/Girl_HelpCorner-ezgif.com-crop.gif'>
+        <img class=imagen_portfolio src='imagenes/2D/Girl_Open_Lotus_In-ezgif.com-crop.gif'>
+        <video controls class=video_portfolio><source src='imagenes/2D/ezgif-7415bef9d97da4.mp4' type='video/mp4'>
+        <video controls class=video_portfolio><source src='imagenes/2D/ezgif-77a77700fa5b8d.mp4' type='video/mp4'>
+        <video controls class=video_portfolio><source src='imagenes/2D/ezgif-79332dbd95e4b7.mp4' type='video/mp4'>
+        `;
         // console.log("tree_storyboard al inicio de getCuerpo() "+tree_storyboard);
         // data = JSON.parse(tree_storyboard);
         // r= "";
@@ -89,7 +102,7 @@ function getCuerpo(id){
         //     }
         // }
         // document.getElementById("cuerpo").innerHTML = r;
-        document.getElementById("cuerpo").innerHTML = ;
+        document.getElementById("cuerpo").innerHTML = "";
     }
     else{
         document.getElementById("cuerpo").innerHTML = `
