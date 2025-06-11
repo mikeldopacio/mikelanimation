@@ -45,6 +45,14 @@ body{
     font-size: 16px;
     margin: 0px 20% 30px 20%;
 }
+.texto_kel{
+    margin: 0px 10% 30px 10%;
+}
+.foto_kel{
+    float: left;
+    margin: 20px 10px 20px 10px;
+    height: 350px;
+}
 .titulo{
     font-size: 24px;
     font-weight: bolder;
