@@ -103,8 +103,9 @@ did the animations (and layout) of the previous shots. All done in Maya.</p>
             <p class=texto_cuerpo>I'm Mikel. A 2D and 3D animator from Barcelona, Spain. I've studied for 4 years at La Salle Animation & VFX.
             I've worked at Nomada Studio during 6 months, doing clean up of videogame 2D animations. I've also been doing art comissions for 6 years.
             I strive to keep growing in my animation journey, thank you for your time.</p>
-            <p class=titulo>+34 618 29 19 12<br></p>
-            <p class=titulo>mikelanimation@gmail.com<br></p>
+            <p class=titulo>Contact<br></p>
+            <p class=texto_cuerpo>+34 618 29 19 12<br></p>
+            <p class=texto_cuerpo>mikelanimation@gmail.com<br></p>
         `;
     }
 }
