@@ -1,6 +1,7 @@
 body{
     background: linear-gradient(90deg,rgba(255, 230, 212, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 230, 212, 1) 100%);
     overflow: scroll;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #titulo{
@@ -22,17 +23,17 @@ body{
 .boton_nav{
     display: inline-block;
     margin: 30px 1% 10px 1%;
-    color:cornflowerblue;
+    color:rgb(131, 35, 241);
 }
 .boton_nav_actual{
     display: inline-block;
     margin: 30px 1% 10px 1%;
-    color:darkblue;
+    color:rgb(186, 66, 11);
     cursor:default;
 }
 .boton_nav:hover{
     cursor: pointer;
-    color: cyan;
+    color: rgb(164, 95, 243);
 }
 
 #cuerpo{
