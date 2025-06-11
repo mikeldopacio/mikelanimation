@@ -107,7 +107,7 @@ did the animations (and layout) of these previous shots. All done in Maya.</p>
             </div>
             <p class=titulo>Contact<br></p>
             <center><p class=texto_cuerpo>+34 618 29 19 12<br></p></center>
-            <center><p class=texto_cuerpo>mikelanimation@gmail.com<br></p></center>
+            <center><p class=texto_cuerpo>mikelanimation@gmail.com<br></p></center><br><br><br>
         `;
     }
 }
