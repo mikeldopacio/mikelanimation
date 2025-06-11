@@ -3,9 +3,10 @@
 //inicializar
 cambiar("boton_info");
 
-if(window.isMobile() ){
+if(window.matchMedia("(any-hover:none)").matches) {
     alert("Esta página no está hecha para verse en teléfonos móviles, por favor, activa la opción 'Solicitar versión de escritorio' de tu navegador.");
-;}
+    //from: https://xobyte.org/scripts/isMobile.js
+}
 
 let main_path = "https://api.github.com/repos/mikeldopacio/mikelanimation/git/trees/main";
 let tree_2d = "";
@@ -115,15 +116,6 @@ did the animations (and layout) of these previous shots. All done in Maya.</p>
         `;
     }
 }
-
-window.isMobile = function(){
-  if(window.matchMedia("(any-hover:none)").matches) {
-    return true;
-  } else {
-    return false;
-  }
-  //from https://xobyte.org/scripts/isMobile.js
-};
 
 function cargarArboles(path){
     //directorio raiz
